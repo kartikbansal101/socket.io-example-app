@@ -23,11 +23,11 @@ var io = socketIO.listen( server )
 
 clients =[]
 
-const port = process.env.PORT || 3000;
-
+// const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.get('/', function(req, res){
-    res.send(`socket working ${port}`)
+    res.send('socket working' )
 })
 
 io.on('connection', (socket)=>{
